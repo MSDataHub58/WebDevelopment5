@@ -1,0 +1,376 @@
+ /* Custom retro canvas & fonts styling */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        :root {
+    --bg-color: #0f172a;
+    --card-bg: rgba(10, 13, 18, 0.8);
+    --accent-blue: #38bdf8;
+    --accent-purple: #a855f7;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+}
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(35%);
+    object-fit: cover;
+}
+
+/* Flexbox Navigation Bar */
+#bar {
+    display: flex;
+    color: rgb(233, 242, 244);
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 50px;
+    width: 95% 50%;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 3px solid rgb(15, 19, 20);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(11, 16, 17);
+    margin-bottom: 25px;
+}
+
+#bar a {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(226, 235, 237);
+    text-decoration: none;
+    padding: 6px 12px;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+}
+
+#bar a:hover {
+    background-color: rgb(46, 185, 228);
+    color: white;
+}
+
+/* Headings & Text */
+h1, h3, h4 {
+    text-align: left;
+    color: rgb(46, 185, 228);
+    margin: 10px 0;
+}
+
+p {
+    text-align: left;
+    color: rgb(200, 220, 230);
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid rgb(7, 103, 133);
+    margin: 15px 3px;
+}
+/* hero and btn */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px 20px;
+    margin: 30px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: rgb(5, 10, 11);
+    color: rgb(232, 237, 239);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(10, 12, 12);
+    color: rgb(229, 238, 240);
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(46, 185, 228);
+}
+
+.bth-outline {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(3, 19, 24);
+    padding: 12px 24px;
+    border: 2px solid rgb(17, 182, 232);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.H2 {
+    text-align: center;
+    color: rgb(46, 185, 228);
+    margin: 20px 0;
+}
+
+/* order form */
+form {
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+
+#nameLabel, #emailLabel, #messageLabel {
+    color: rgb(225, 233, 235);
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    align-items: center;
+    border-radius: 5px;
+    border: 0px solid rgb(7, 103, 133);
+}
+
+#nameInput, #emailInput, #messageInput{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(7, 103, 133);
+    border-left: 5px solid rgb(7, 103, 133);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#submitBtn {
+    background-color: rgb(184, 216, 225);
+    border-color: rgb(135, 186, 231);
+    width: 150px;
+    height: 75px;
+    color: rgb(4, 13, 15);
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(7, 103, 133);
+    border-left: 5px solid rgb(7, 103, 133);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.order-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(13, 14, 15);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid rgb(7, 103, 133);
+    border-left: 5px solid rgb(7, 103, 133);
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+#submitBtn:hover {
+    background-color: rgb(46, 185, 228);
+    color: white;
+}
+/* List Styling */
+.my-list-section {
+    background: #0f1011;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.my-list-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.my-list-section li {
+    margin-bottom: 8px;
+    color: #f1eded;
+}
+
+/* Audio Player Section */
+.my-audio-section {
+    background: #0a0b0d;
+    height: 70px;
+    width: 20%;
+    padding: 7px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+.site-footer {
+    background-color: #0f172a;
+    height: 100px;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #0052cc;
+}
+
+.site-footer a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+/* Container & Unique Paragraphs */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .intro-p1 {
+            font-size: 1.1rem;
+            padding: 15px;
+            border-left: 4px solid var(--accent-blue);
+            background-color: rgba(56, 189, 248, 0.05);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 25px;
+        }
+
+        .intro-p2 {
+            font-size: 1rem;
+            color: #cbd5e1;
+            margin-bottom: 25px;
+            line-height: 1.8;
+        }
+
+        .intro-p3 {
+            font-style: italic;
+            color: var(--accent-purple);
+            background: rgba(168, 85, 247, 0.05);
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        /* Cards Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .card {
+            background-color: rgba(10, 13, 18, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* hover Effects */
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(56, 189, 248, 0.15);
+            border-color: var(--accent-blue);
+        }
+
+        .card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+
+        /* List Styling */
+        .skills-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .skills-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+
+        .skills-list li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+        LI {
+            color: rgb(200, 220, 230);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Center alignment and responsive video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;     
+    margin: 20px auto;   
+    padding-bottom: 56.25%;  
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/* Scrollbar width/size */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Scrollbar Background Track  */
+::-webkit-scrollbar-track {
+    background: #1e1e2e; 
+    border-radius: 8px;
+}
+
+/* Scrollbar Thumb (draggble part) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #57a7e8, #2598fc);
+    border-radius: 8px;
+    border: 2px solid #1e1e2e; 
+}
+
+/* Hover Effect  */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #25b8fc, #3a7de8);
+    cursor: pointer;
+}

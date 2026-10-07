@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - MS</title>
+    <link rel="icon" type="jpg" href="icon.png.jpg">
+    <link rel="stylesheet" href="STYLE2.CSS">
+</head>
+<body>
+      <video autoplay muted loop id="bgVideo">
+    <source src="back.mp4" type="video/mp4">
+</video>
+     <DIV id="bar">
+     <a id="home" href="INDEX.HTML">HOME</a> 
+     <a id="projects" href="SHOWCASE.html">PROJECTS</a>
+     <a id="contact" href="https://www.linkedin.com/in/m-saad-0208ms58/" target="_blank">CONTACT</a>
+     <a id="order" href="order.html">ORDER</a>
+    </DIV>
+    <div class="order-container">
+   <form id="orderForm" action="https://formspree.io/f/xdekglzl" method="POST">
+    <h3>Order a Custom Dashboard / Project</h3>
+    
+    <label id="nameLabel">Your Name:</label><br>
+    <input id="nameInput" type="text" name="name" required placeholder="Enter your name"><br><br>
+
+    <label id="emailLabel">Your Email:</label><br>
+    <input id="emailInput" type="email" name="email" required placeholder="Enter your email"><br><br>
+
+    <label id="messageLabel">Project Details:</label><br>
+    <textarea id="messageInput" name="message" rows="5" required placeholder="Describe your data/dashboard requirements..."></textarea><br><br>
+
+    <button id="submitBtn" type="submit">Submit Order Request</button>
+</form>
+
+    </div>
+   </body>
+</html>
