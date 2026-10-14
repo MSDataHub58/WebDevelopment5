@@ -30,20 +30,19 @@
 
 /* Flexbox Navigation Bar */
 #bar {
+    background-color: #0a0b0d;
     display: flex;
     color: rgb(233, 242, 244);
     justify-content: space-around;
     align-content: center;
     align-items: center;
-    min-height: 50px;
+    height: 85px;
     width: 95% 50%;
     border-radius: 8px;
     margin: 20px 0;
-    border: 3px solid rgb(15, 19, 20);
     border-radius: 10px;
     padding: 10px 20px;
-    background-color: rgb(11, 16, 17);
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 #bar a {
@@ -60,6 +59,7 @@
     background-color: rgb(46, 185, 228);
     color: white;
 }
+
 
 /* Headings & Text */
 h1, h3, h4 {
@@ -219,8 +219,8 @@ textarea {
 
 /* Audio Player Section */
 .my-audio-section {
-    background: #0a0b0d;
-    height: 70px;
+    background: none;
+    height: 65px;
     width: 20%;
     padding: 7px;
     border-radius: 8px;
@@ -329,6 +329,12 @@ textarea {
             color: rgb(200, 220, 230);
             font-family: 'Space Grotesk', sans-serif;
         }
+        .my-list:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(56, 189, 248, 0.15);
+            border-color: var(--accent-blue);
+        }
+        
         /* Center alignment and responsive video container */
 .video-container {
     position: relative;
