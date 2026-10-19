@@ -31,7 +31,7 @@ Welcome to the official repository of my personal portfolio and data analytics d
 
 ---
 
-##Screen Shot
+## Screen Shot
 
 ![SITE INTERFACE](https://github.com/MSDataHub58/WebDevelopment5/blob/5b29e7903d1eae8e416c64c756047c10e52f051f/Screenshot%202026-10-07%20183658.png)
 
