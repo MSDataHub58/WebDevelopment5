@@ -1,4 +1,4 @@
- /* Custom retro canvas & fonts styling */
+ /* Font styling*/
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap');
         
         body {
@@ -28,7 +28,7 @@
     object-fit: cover;
 }
 
-/* Flexbox Navigation Bar */
+/* N-B */
 #bar {
     background-color: #0a0b0d;
     display: flex;
@@ -61,7 +61,7 @@
 }
 
 
-/* Headings & Text */
+/* HEADING & TEXT */
 h1, h3, h4 {
     text-align: left;
     color: rgb(46, 185, 228);
@@ -80,7 +80,7 @@ hr {
     border: 1px solid rgb(7, 103, 133);
     margin: 15px 3px;
 }
-/* hero and btn */
+/* hero & btn*/
 .hero {
     display: flex;
     flex-direction: column;
@@ -199,7 +199,7 @@ textarea {
     background-color: rgb(46, 185, 228);
     color: white;
 }
-/* List Styling */
+/* list Style*/
 .my-list-section {
     background: #0f1011;
     padding: 15px;
@@ -217,7 +217,7 @@ textarea {
     color: #f1eded;
 }
 
-/* Audio Player Section */
+/* music*/
 .my-audio-section {
     background: none;
     height: 65px;
@@ -227,7 +227,7 @@ textarea {
     margin: 10px 0;
 }
 
-/* Footer Styling */
+/* FFOTER */
 .site-footer {
     background-color: #0f172a;
     height: 100px;
@@ -277,7 +277,7 @@ textarea {
             margin-bottom: 35px;
         }
 
-        /* Cards Grid */
+        /* cards*/
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -334,8 +334,6 @@ textarea {
             box-shadow: 0 12px 24px rgba(56, 189, 248, 0.15);
             border-color: var(--accent-blue);
         }
-        
-        /* Center alignment and responsive video container */
 .video-container {
     position: relative;
     width: 100%;
@@ -356,26 +354,20 @@ textarea {
     height: 100%;
     border: none;
 }
-/* Scrollbar width/size */
+/* Scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
-
-/* Scrollbar Background Track  */
 ::-webkit-scrollbar-track {
     background: #1e1e2e; 
     border-radius: 8px;
 }
-
-/* Scrollbar Thumb (draggble part) */
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, #57a7e8, #2598fc);
     border-radius: 8px;
     border: 2px solid #1e1e2e; 
 }
-
-/* Hover Effect  */
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #25b8fc, #3a7de8);
     cursor: pointer;
